@@ -8,11 +8,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas Eléctricas</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <header>
-        <h1> Ventas de Herramientas Eléctricas</h1>
+        <img src="img/logo_01.png" alt="logo">
+        <h1 id="tituloPrincipal"> Ventas de Herramientas Eléctricas</h1>
     </header>
 
     <nav>
@@ -39,20 +42,98 @@
     </nav>
     
     <main>
+       <!-- catalogo de Productos-->
+       <section>
         <h2>Catalogo</h2>
+        
         <div>
-            <h3>Amoladora</h3>
-            <img src="img/amoladoraDewalt.png" alt="amoladoraDewalt">
-            <img src="img/taladroDewalt.png" alt="taladroDewalt">
+            <h3>Amoladora inalambrica</h3>
+            <img src="img/amoladoraDewalt.png" alt="amoladoraDewalt" width="200">
         </div>
-        <div>
-            <h3>Video</h3>
+        </section>
 
-        </div>
-        <div>
-            <h3>Registro</h3>
+        <!-- Videos-->
+        <section id="videoProductos">
+            <h2>Videos</h2>
+            <video src="videos/dewalt.mp4" title="video dewalt" muted controls width="200"></video>
+            
+            <p>Descripción: </p>
 
-        </div>
+        </section>
+
+        <!-- Formularios -->
+        <section id="formulario">
+            <h2>Formularios</h2>
+
+            <form action="https://formspree.io/f/xldebdlz" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                        <label for="nombre">Nombres [*]</label>
+                            <input type="text" id="" name="nombre" size="10" maxlength="15" required>
+                        <label for="apellido">Apellido [*]</label>
+                            <input type="text" id="" name="apellido" size="10" maxlength="15" required>
+                        <br><br>
+                        <label for="dni">DNI</label>
+                            <input type="number" name="dni" id="" size="20">
+                        <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="" size="20">
+                        <label for="contraseña"> Contraseña</label>
+                            <input type="password" name="contraseña" id="">
+                        <label for="fecha">Fechas</label>
+                            <input type="date" name="fecha" id="">
+                        <br><br>
+                        <h4>Forma de pago</h4>
+                        <select name="opciones" id="">
+                            <option value="efectivo">Efectivo</option>
+                            <option value="tarjeta">Tarjeta</option>
+                            <option value="transferencias">Transferencias</option>
+                        </select>
+                         <br><br>
+                         <label for="correo">E-mail</label>
+                            <input type="email" name="" id="">   
+                        <br><br>
+                        <h3>Adjuntar Comprobante</h3>
+                        <label for="adjuntar">Adjuntar Comprobante</label>
+                            <input type="file" name="adjuntar" id="">
+                        <br><br>
+                </fieldset>
+                <label for="comentario">Escriba su consulta</label><br>
+                    <textarea name="comentario" id="" cols="30" rows="20" placeholder="Escriba la consulta"></textarea>
+                <br><br>
+                <label for="turno">Turnos</label><br>
+                    <select name="turno" id="" size="2">
+                        <option value="1">Mañana</option>
+                        <option value="2">Medio dia</option>
+                        <option value="3">Tarde</option>
+                        <option value="4">Noche</option>
+                    </select>
+                <br><br>
+                <label for="cp">Califición</label><br>
+                    <input type="checkbox" name="cp" id="" value="1">Excelente
+                    <input type="checkbox" name="cp" id="" value="2">Buena
+                    <input type="checkbox" name="cp" id="" value="3">Regular
+                    <input type="checkbox" name="cp" id="" value="4">Mala
+                <br></br>
+                <label for="rb">Envio</label><br>
+                    <input type="radio" name="rb" id="" value="1">CABA
+                    <input type="radio" name="rb" id="" value="2">Gran Bs. As.
+                    <input type="radio" name="rb" id="" value="3">Provincia de Bs. As.
+                    <input type="radio" name="rb" id="" value="4">Interior del País
+                <br><br>
+                <h4>Acepto los terminos y condiciones [*]</h4>
+                    <input type="checkbox" name="condiciones" id="" required>
+                <br></br>
+                <input type="submit" name="Enviar Datos" id="">
+                <input type="reset" value="Borrar">
+                </form>
+
+
+
+        </section>
+
+        <section>Productos</section>
+        <section>Reseñas</section>
+        <section>Contactos</section>
     </main>
     
     <footer>
