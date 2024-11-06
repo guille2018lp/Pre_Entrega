@@ -8,39 +8,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas Eléctricas</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    
     <header>
         <img src="img/logo_01.png" alt="logo">
-        <h1 id="tituloPrincipal"> Ventas de Herramientas Eléctricas</h1>
+        <h1 id="tituloPrincipal"> Herramientas Eléctricas</h1>
+        <nav id="menu">
+            <h2>Menu inicio</h2>
+            <div>
+                <ul>
+                    <li>inicio</li>
+                    <li>contactos</li>
+                    <li>ubicacion</li>
+                    <li>Registro</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>Promociones</h2>
+                <ol>
+                    <li>Inalambricas</li>
+                    <li>Amoladoras</li>
+                    <li>Taladros</li>
+    
+                </ol>
+            </div>
+    
+        </nav>
     </header>
 
-    <nav>
-        <h2>Menu inicio</h2>
-        <div>
-            <ul>
-                <li>inicio</li>
-                <li>contactos</li>
-                <li>ubicacion</li>
-                <li>Registro</li>
-            </ul>
-        </div>
-        
-        <div>
-            <h2>Promociones</h2>
-            <ol>
-                <li>Inalambricas</li>
-                <li>Amoladoras</li>
-                <li>Taladros</li>
-
-            </ol>
-        </div>
-
-    </nav>
-    
     <main>
        <!-- catalogo de Productos-->
        <section>
@@ -50,6 +55,10 @@
             <h3>Amoladora inalambrica</h3>
             <img src="img/amoladoraDewalt.png" alt="amoladoraDewalt" width="200">
         </div>
+        <div class="descripcion">
+            <p>Propiedades:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis excepturi magni labore quam nesciunt totam molestiae earum repellat rem vitae aliquid quisquam blanditiis neque consequuntur modi quibusdam, at eos rerum.</p>
+        </div>
         </section>
 
         <!-- Videos-->
@@ -57,8 +66,11 @@
             <h2>Videos</h2>
             <video src="videos/dewalt.mp4" title="video dewalt" muted controls width="200"></video>
             
-            <p>Descripción: </p>
-
+           
+            <div class="descripcion">
+                <p>Descripción: </p>
+                <p id="caveat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, architecto consequatur. Ad reprehenderit porro rerum unde placeat velit, magnam optio maxime obcaecati ipsam excepturi iusto. Optio laborum dolorem fugit vel?</p>
+            </div>
         </section>
 
         <!-- Formularios -->
@@ -130,14 +142,20 @@
 
 
         </section>
-
-        <section>Productos</section>
-        <section>Reseñas</section>
-        <section>Contactos</section>
+        <article></article>
+       
     </main>
     
-    <footer>
-        <h2>Contactos</h2>
+    <footer id="footer">
+        <div id="icons">
+            <a href="index.html"><img src="icons/house.ico" alt="home"></a>
+            <a href="#"><img src="icons/facebook.ico" alt="facebook"></a>
+            <a href="#"><img src="icons/phone.ico" alt="telefono"></a>
+            <a href="#"><img src="icons/Whatsapp.ico" alt=""></a>
+        </div>
+        
+
+    
     </footer>
     
 </body>

@@ -1,9 +1,48 @@
+:root{
+    font-size: 20px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-image: url("../img/herramientas.jpg");
+}
 
 #tituloPrincipal{
     background-color: rgb(195, 236, 190);
+   
 
 }
 
 #formulario{
     background-color: rgb(192, 192, 241);
+}
+#menu{
+    background-color: rgb(238, 209, 44, 0.329);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.descripcion{
+    color: rgb(255, 251, 13);
+    background-color: rgb(30, 30, 87);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    width: 200px;
+    font-weight: bold;
+}
+
+.caveat{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#footer{
+    background-color: rgb(107, 93, 93);
+    
 }
