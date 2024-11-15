@@ -1,3 +1,6 @@
+
+/*  Estilo para la pagina de Productos */
+
 * {
     box-sizing: border-box;
 }
@@ -48,4 +51,49 @@ h2 {
 #video{
     width: 60%;
     height: auto;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+h2{
+    font-size: 100%;
+
+}
+
+img{
+    width: 70%;
+}
+  
+p{
+    font-size: 70%;   
+}    
+
+.entrada-blog a{
+    width: 70;
+}
+
+}
+
+@media all and (max-width: 599px) {
+
+    h2{
+        font-size: 100%;
+    
+    }
+    
+    img{
+        width: 50%;
+    }
+      
+    p{
+        font-size: 70%;   
+    }    
+    
+    .tres-columnas {
+        display: grid;
+        grid-template-areas: 
+            "col1 col2 "
+            "col1 col2";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
 }
