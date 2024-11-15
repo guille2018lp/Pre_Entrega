@@ -1,22 +1,22 @@
-
-*{
-    padding: 2px;
-    margin: 1px;
-}
-
 body {
-    padding: 10px;
-    border: 2px   solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(243, 243, 243);
 }
+
 /* header */
 
-#encabezadoTitulo {
+header {
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#encabezado-Titulo {
     background-image: url("../img/herramientas.jpg");
-    background-size: 200px;
+    background-size: 100px;
     display: flex;
     border: 2px solid rgb(206, 188, 26);
-
 
 }
 
@@ -28,132 +28,201 @@ body {
     margin-right: auto;
     border-radius: 10px ;
     border: 1px solid ;
-    -webkit-border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -ms-border-radius: 10px ;
-    -o-border-radius: 10px ;
+ 
 }
-#tituloPrincipal{
+#titulo-Principal{
     text-align: center;
-  
+    font-size: 150%;
+
 }
 
 
+/*---Nav: Menu de navegacion---*/
 
+#marca img {
+    width: 220px;
+    height: 70px;
+    float: left;
+}
+
+#botonera_principal {
+    width: 400px;
+    height: 40px;
+    float:right;
+    margin-top: 20px;
+}
+
+#botonera_principal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+#botonera_principal ul li {
+    display: inline;
+}
+
+#botonera_principal ul li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fdf13f;
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botonera_principal ul li a:active {
+    color: rgb(252, 5, 5);
+}
+
+#botonera_principal ul li a:visited {
+    color: rgb(187, 50, 192);
+}
+
+#botonera_principal ul li a:link {
+    color: rgb(47, 17, 155);
+}
+
+#botonera_principal ul li a:hover {
+    color: rgb(233, 61, 31);
+}
+
+#contenido_principal {
+    width: 960px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#imagen1 {
+    width: 350px;
+    height: 300px;
+    float:left;
+    margin-top: 10px;
+    background-image: url(../img/index_Herramientas01.jpg);
+    background-size: cover; 
+}
+
+#presentacion {
+    width: 600px;
+    height: 300px;  /*prueba*/
+    background-color: #69e79e;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#titulo_principal {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* -----------------Fin Nav---------------------*/
 /* --------------Fin header-------------------- */
 
+/* ---------------- Main -------------------------- */
 
-/*--------------- Nav: Menu de navegacion--------*/
 
-/* ----------- clase 7 - menu --------------- */
-.centrado{
-    margin: 0 auto;
-    padding: 0 1em;
-    font-family: 'Courier New', Courier, monospace;
-
+#datos p {
+    font-size: 14px;
 }
 
-.menu-section{
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-    border-bottom: 2 px solid hsl(0, 0%);
+
+#contenido_articulo {
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
-.menu-simple-menu{
-    padding: 0;
-    margin: 0;
-    background: hsl(56, 100%, 75%);
-}
-
-.menu-simple-menu ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.menu-simple-menu ul li{
-    list-style-type: none;
-    display: inline-block; 
-    cursor: pointer;
-    
-}
-.menu-simple-menu li{
-    flex: 1 0 auto;
-    text-align: center;
-}
-
-.menu-simple-menu li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: .6em 1em;
-    border: 2px solid black;
-    border-radius: 30px;
-    width: 80px;
-}
-
-.menu-simple-menu a:hover{
-    background-color: rgb(250, 246, 10);
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-#logo_01 img {
-    width: 60px; 
-    height: auto;
-    border: 2px solid black; 
-
-}
-
-#logo_01:hover{
-    background-color: rgb(250, 246, 10);
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-/* -----------------Fin Nav---------------------*/
-
-/* -----------------Catalogo de Productos---------------------*/
-.descripcion{
+#texto_contenido {
+    width: 250px;
+    height: 300px;
+    background-color: #56ce5c;
     float: left;
-    color: rgb(32, 32, 25);
-    background-color: rgb(139, 139, 185);
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    width: 200px;
-    font-weight: bold;
-    overflow-y: scroll;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.caveat{
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+#contenido_segundo {
+    font-family: Helvetica;
+    font-size: 12px;
 }
+#imagen2 {
+    width: 440px;
+    height: 300px;
+    float:left; 
+    margin-bottom: 10px;
+    background-image: url(../img/index_Herramientas02.jpg);
+    background-size: cover; 
+}
+
+#destacado {
+    width: 250px;
+    height: 300px;
+    background-color: #68af6c;
+    float: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#contenido_destacado{
+    font-family: Arial;
+    font-size: 24px;
+}
+
+#complementario{
+    width:960px;
+    height: 180px;
+    clear: both;
+}
+
+#imagen_aside {
+    width:960px;
+    height: 180px;
+}
+
+
+
+/* #datos {
+    width:300px;
+    height: 180px;
+    float:left;
+    padding:20px;
+    box-sizing: border-box;
+} */
+/* #redes {
+    width:350px;
+    height: 35px;
+    float:right;
+} */
+
+
 
 #videoProductos{
     float: none;    
 }
-/* -----------------Fin Catalogo de Productos---------------------*/
-
-
-
-/* -----------------Formulario---------------------*/
-#formulario{
-    background-color: rgb(192, 192, 241);
-}
-/* -----------------Fin Formulario---------------------*/
-
 
 
 
 /* -----------------Footer---------------------*/
-#footer{
+
+footer {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6cdcd;
+    color: #fff;
+    margin-top: 1%;
+    text-align: center;
+}
+/* #footer{
     display: flex;
     padding: 10px;
     background-color: rgb(131, 142, 238);
@@ -161,18 +230,254 @@ body {
     border: 1px solid black;
     border-radius: 50px;
    
-}
+} */
 
-#footer a{
+/* #footer a{
+    float: left;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-}
+} */
+
  #footer a img{
     width: 50px; 
     height: auto;
  }
 /* -----------------Fin Footer---------------------*/
+
+/* A partir de acá empezamos el media query */
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+    header {
+        width: 580px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #titulo-Principal{
+        text-align: center;
+        font-size: 100%;
+    
+    }
+    #datos p {
+        font-size: 12px;
+    }
+    
+    #marca img {
+        width: 300px;
+        height: 70px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+  
+    #botonera_principal ul li a {
+        display: inline-block;
+        padding: 10px;
+        font-weight: bold;
+        text-decoration: none;
+    }   
+    
+    #contenido_principal {
+        width: 580px;
+        height: 800px;
+    }
+
+    #imagen1 {
+        width: 200px;
+        background-size: cover; 
+        background-position: center;
+    }
+    
+    #presentacion {
+        width: 370px;
+        height: 300px; /*?*/
+    }
+    
+    #titulo_principal {
+        font-size: 25px;
+    }
+    
+    #contenido_articulo {
+        font-size: 18px;
+    }
+    
+    #texto_contenido {
+        width: 285px;
+        height: 200px;
+    }
+    
+    #contenido_segundo {
+        font-size: 10px;
+    }
+
+    #imagen2 {
+        width: 285px;
+        height: 200px;
+        background-size: cover; 
+    }
+    
+    #destacado {
+        width: 580px; /*¿*/
+        height: 135px;
+    }
+    
+    #contenido_destacado{
+        font-size: 18px;
+    }
+    
+    #complementario{
+        width: 580px;
+        height: 130px;
+    }
+    
+    #imagen_aside {
+        width: 580px;
+        height: 130px;
+    }
+    
+    footer {
+        width: 580px;
+    }
+    
+    #datos {
+        width:250px;
+
+    }
+    #redes {
+        width:250px;
+    }
+}     /*fin de media de una tableta*/
+
+@media all and (max-width: 599px) {
+
+    header {
+        width: 90%;
+        height: auto;
+
+    }
+    #datos p {
+        font-size: 10px;
+    }
+    #titulo-Principal{
+        text-align: center;
+        font-size: 80%;
+    
+    }
+    #marca img {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    #botonera_principal {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-top: 20px; /*?*/
+    }
+    
+    #botonera_principal ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: none;
+    }
+    
+    #botonera_principal ul li {
+        display: block;
+    }
+
+    #botonera_principal ul li a {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+     
+    #contenido_principal {
+        width: 90%;
+        height: auto;
+    }
+
+    #imagen1 {
+        width: 100%;
+        height: 380px; 
+        float: none;
+        /*background-size: cover;*/
+    }
+    
+    #presentacion {
+        width: 100%;
+        height: auto; 
+        float: none;
+    }
+    
+   
+    #texto_contenido {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+    }
+    
+    #imagen2 {
+        width: 100%;
+        height: 300px;
+        float: none; 
+        margin-bottom: 10px;
+        background-position: center; 
+    }
+    
+    #destacado {
+        width: 100%;
+        height: auto;
+        float: none;
+
+    }
+    
+    #contenido_destacado{
+        font-size: 90%;
+    }
+    
+    #complementario{
+        display: none;
+    }
+    
+    
+    footer {
+        width: 90%;
+        height: auto;
+        float: none
+    }
+    
+    #datos {
+        width: 100%;
+        height: auto;
+        float: none;
+
+    }
+    #redes {
+        width: 100%;
+        height: 35px;
+        float: none;
+    }
+}/*fin media movil*/
+
+
+
+
+
+
+/* ---------------- Fin Main -------------------------- */
+
 
 
 
@@ -185,7 +490,7 @@ body {
     line-height: 220px;
     padding: 20px;
  } */
-
+/* 
  #caja1, #caja2{
     width: 250px;
     height: 250px;
@@ -205,7 +510,7 @@ body {
     margin: 15px;
     padding: 10px;
     float: left; 
- }
+ } */
 
  .clearfix{
     float: none;
